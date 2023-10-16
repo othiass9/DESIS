@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Formulario</title>
+
+</head>
+<body onload="cargaFunciones()">
+    <div class="container">
+   <form action="#" id="frm_desis" onsubmit="return false;">
+      <div class="row">
+        <div class="col-sm-4">
+        <label for="nombre">Nombre y Apellido</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="alias">Alias</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="text" id="alias" name="alias" minlength="5" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="rut">RUT</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="text" id="rut" name="rut" required oninput="checkRut(this)">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="email" id="email" name="email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="region">Región</label>
+      </div>
+      <div class="col-sm-3">
+        <select id="cmb_region" name="cmb_region" required onchange="comunas()" >
+    
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="comuna">Comuna</label>
+      </div>
+      <div class="col-sm-3">
+        <select id="cmb_comuna" name="cmb_comuna" disabled required>
+            <option value="">Seleccione una comuna</option>
+          </select>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="candidato">Candidato</label>
+      </div>
+      <div class="col-sm-3">
+        <select id="cmb_candidato" name="cmb_candidato" required>
+ 
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+      <label for="como_se_entero">Cómo se enteró de nostros:</label>
+    </div>
+        <div class="col-sm-2">
+          <input type="checkbox" name="opcion[]" id="option[]" value="Web"> Web
+        </div>
+        <div class="col-sm-2">
+          <input type="checkbox" name="opcion[]" id="option[]" value="TV"> TV
+        </div>
+        <div class="col-sm-2">
+          <input type="checkbox" name="opcion[]" id="option[]" value="Redes Sociales"> Redes sociales
+        </div>
+        <div class="col-sm-2">
+          <input type="checkbox" name="opcion[]" id="option[]" value="Amigo"> Amigo
+        </div>
+    </div>
+ 
+    <div class="row">
+      <div class="col-sm-4">
+      <br>
+        <input type="submit" value="Enviar" onclick="guardaVoto();">
+      </div>
+    </div>
+    </form>
+</div>
+
+<script>
+
+</script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/funcion.js" type="text/javascript"></script>
+</body>
+</html>

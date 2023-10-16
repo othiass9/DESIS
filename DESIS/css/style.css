@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    width: 900px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  input, select {
+   
+   
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+  }
+/*  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }*/
