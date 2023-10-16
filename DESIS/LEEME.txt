@@ -1,0 +1,10 @@
+Instrucciones:
+•	Se requiere instalar XAMPP Versión 8.0.25 o superior en el siguiente link: https://www.apachefriends.org/es/download.html
+•	Tener versión PHP 8.0.25 o superior
+•	Versión base de datos 10.4.27-MariaDB
+•	Se debe iniciar XAMPP y sus servicios de apache y MySql
+•	Para instalar la aplicación se debe descargar el proyecto desde github (LINK).
+•	Luego copiar la carpeta raíz del proyecto en la URL en la cual este instalado (Ejemplo: C:\xampp\htdocs\)
+•	Luego es necesario importar la base de datos desde el administrador de mysql (phpmyadmin) utilizando el archivo desis.sql.  
+•	Se debe configurar el script de conexión del aplicativo el cual se encuentra en la URL \DESIS\includes llamado psl-config.php, en él se debe editar el host, usuario y password de la base de datos.
+•	Para finalizar, entrar a localhost/DESIS/ indicando el puerto si es requerido ejemplo: http://localhost /DESIS/
