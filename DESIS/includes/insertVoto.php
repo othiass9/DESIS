@@ -31,10 +31,10 @@ while($row = mysqli_fetch_array($result)) {
 	
 	echo json_encode($rawdata);
  }else{
-	/*$sql = "CALL INS_VOTO('$txtNombre','$txtAlias','$txtRut','$txtEmail',$id_region,$id_comuna,$id_Candidato,'$opcion')";
+	$sql = "CALL INS_VOTO('$txtNombre','$txtAlias','$txtRut','$txtEmail',$id_region,$id_comuna,$id_Candidato,'$opcion')";
 
 		$result = $mysqli->query($sql);      
-		$row = $result->fetch_array(1);  */
+		$row = $result->fetch_array(1);  
 	
 	$rawdata = '0';
 	echo json_encode($rawdata);
